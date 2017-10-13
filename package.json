@@ -47,7 +47,8 @@
         "BUG",
         "QUESTION",
         "COMBAK",
-        "TEMP"
+        "TEMP",
+        "DEBUG"
       ],
       "items": {
         "type": "string"

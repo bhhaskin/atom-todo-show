@@ -1,6 +1,6 @@
 # Todo Show Package [![Build Status](https://travis-ci.org/mrodalgaard/atom-todo-show.svg)](https://travis-ci.org/mrodalgaard/atom-todo-show)
 
-Finds all TODO, FIXME, CHANGED, XXX, IDEA, HACK, NOTE, REVIEW, NB, BUG, QUESTION, COMBAK, TEMP comments in your project and shows them in a nice overview list.
+Finds all TODO, FIXME, CHANGED, XXX, IDEA, HACK, NOTE, REVIEW, NB, BUG, QUESTION, COMBAK, TEMP, DEBUG comments in your project and shows them in a nice overview list.
 
 Attention: This package searches for todos. For todo word highlighting see [language-todo](https://github.com/atom/language-todo).
 
@@ -24,7 +24,7 @@ Five different scopes are available to narrow down your search for todos. Change
 Name                  | Default                                 | Description
 ----------------------|-----------------------------------------|------------
 _autoRefresh_         | `true`                                  | Automatic refresh of todo list after saving
-_findTheseTodos_      | `['FIXME', 'TODO', 'CHANGED', 'XXX', 'IDEA', 'HACK', 'NOTE', 'REVIEW', 'NB', 'BUG', 'QUESTION', 'COMBAK', 'TEMP']` | An array of todo types used by the search regex
+_findTheseTodos_      | `['FIXME', 'TODO', 'CHANGED', 'XXX', 'IDEA', 'HACK', 'NOTE', 'REVIEW', 'NB', 'BUG', 'QUESTION', 'COMBAK', 'TEMP', 'DEBUG']` | An array of todo types used by the search regex
 _findUsingRegex_      | See 'Regular Expression Search' section | Regex string used to find all your todos. `${TODOS}` is replaced with `FindTheseTodos` from above
 _ignoreThesePaths_    | `['node_modules', 'vendor', 'bower_components', '*.pdf']` | An array of files / folders to exclude (syntax according to [scandal](https://github.com/atom/scandal) used internally by Atom). <br> ⚬ _globally_: `Ignored Names` from atom core settings. <br> ⚬ _locally_: Ignores anything in your `.gitignore` file, if the current project is a valid git repository and atom core setting `Exclude VCS Ignored Paths` is checked.
 _showInTable_         | `['Text', 'Type', 'Path']`              | An array of properties to show for each todo in table
